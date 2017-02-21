@@ -1,0 +1,20 @@
+C:\Users\shwet\Desktop\bsl-realsence\bin\x64\Debug\FF_HandsViewer.cs.exe.config
+C:\Users\shwet\Desktop\bsl-realsence\bin\x64\Debug\FF_HandsViewer.cs.exe
+C:\Users\shwet\Desktop\bsl-realsence\bin\x64\Debug\FF_HandsViewer.cs.pdb
+C:\Users\shwet\Desktop\bsl-realsence\bin\x64\Debug\libpxcclr.cs.dll
+C:\Users\shwet\Desktop\bsl-realsence\obj\x64\Debug\FF_HandsViewer.cs_vs2010-13.csprojResolveAssemblyReference.cache
+C:\Users\shwet\Desktop\bsl-realsence\obj\x64\Debug\hands_viewer.cs.MainForm.resources
+C:\Users\shwet\Desktop\bsl-realsence\obj\x64\Debug\FF_HandsViewer.cs.Properties.Resources.resources
+C:\Users\shwet\Desktop\bsl-realsence\obj\x64\Debug\FF_HandsViewer.cs_vs2010-13.csproj.GenerateResource.Cache
+C:\Users\shwet\Desktop\bsl-realsence\obj\x64\Debug\FF_HandsViewer.cs.exe
+C:\Users\shwet\Desktop\bsl-realsence\obj\x64\Debug\FF_HandsViewer.cs.pdb
+C:\Users\shwet\Desktop\Sign-Along capstone\bin\x64\Debug\FF_HandsViewer.cs.exe.config
+C:\Users\shwet\Desktop\Sign-Along capstone\obj\x64\Debug\FF_HandsViewer.cs.exe
+C:\Users\shwet\Desktop\Sign-Along capstone\obj\x64\Debug\FF_HandsViewer.cs.pdb
+C:\Users\shwet\Desktop\Sign-Along capstone\bin\x64\Debug\FF_HandsViewer.cs.exe
+C:\Users\shwet\Desktop\Sign-Along capstone\bin\x64\Debug\FF_HandsViewer.cs.pdb
+C:\Users\shwet\Desktop\Sign-Along capstone\bin\x64\Debug\libpxcclr.cs.dll
+C:\Users\shwet\Desktop\Sign-Along capstone\obj\x64\Debug\FF_HandsViewer.cs_vs2010-13.csprojResolveAssemblyReference.cache
+C:\Users\shwet\Desktop\Sign-Along capstone\obj\x64\Debug\hands_viewer.cs.MainForm.resources
+C:\Users\shwet\Desktop\Sign-Along capstone\obj\x64\Debug\FF_HandsViewer.cs.Properties.Resources.resources
+C:\Users\shwet\Desktop\Sign-Along capstone\obj\x64\Debug\FF_HandsViewer.cs_vs2010-13.csproj.GenerateResource.Cache
