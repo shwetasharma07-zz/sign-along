@@ -278,6 +278,7 @@ namespace hands_viewer.cs
             stop = true;
             e.Cancel = Stop.Enabled;
             closing = true;
+     
         }
 
         private delegate void UpdateStatusDelegate(string status);
@@ -330,7 +331,8 @@ namespace hands_viewer.cs
 
         protected void NextKaraoke()
         {
-            string[] words = {"BOND", "MAN", "BACON", "*", "PHOBIA", "CIAN", "DUMB", "CODE" };
+            string[] words = {"ACE", "MOM", "LEMON", "MILLION", "LEAF", "CANDLE", "ECONOMIC", "COFFEE", "FACE", "LOONIE",
+                                "CLIMB", "IDEA", "FEED", "AMBULANCE", "MAIL", "FOOD", "ONION", "DECLINE", "BAMBOO", "ACADEMIC"};
            /* Bitmap[] images = {
                                   FF_HandsViewer.cs.Properties.Resources.bond,
                                   FF_HandsViewer.cs.Properties.Resources.man,
@@ -391,6 +393,7 @@ namespace hands_viewer.cs
         private void Stop_Click(object sender, EventArgs e)
         {
             stop = true;
+            Application.Exit();
         }
 
         public void DisplayBitmap(Bitmap picture)
