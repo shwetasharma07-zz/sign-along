@@ -43,7 +43,7 @@
             this.Stop.Name = "Stop";
             this.Stop.Size = new System.Drawing.Size(46, 35);
             this.Stop.TabIndex = 3;
-            this.Stop.Text = "Stop";
+            this.Stop.Text = "Exit";
             this.Stop.UseVisualStyleBackColor = true;
             this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 

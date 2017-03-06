@@ -75,12 +75,13 @@
             // Stop
             // 
             this.Stop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Stop.AutoSize = true;
             this.Stop.Enabled = false;
-            this.Stop.Location = new System.Drawing.Point(1349, 12);
+            this.Stop.Location = new System.Drawing.Point(1241, 12);
             this.Stop.Name = "Stop";
-            this.Stop.Size = new System.Drawing.Size(46, 35);
+            this.Stop.Size = new System.Drawing.Size(154, 35);
             this.Stop.TabIndex = 3;
-            this.Stop.Text = "Stop";
+            this.Stop.Text = "Back to Menu";
             this.Stop.UseVisualStyleBackColor = true;
             this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 

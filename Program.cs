@@ -27,26 +27,8 @@ namespace hands_viewer.cs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            PXCMSession session = null;
-            session = PXCMSession.CreateInstance();
-            if (session != null)
-            {
-                // Optional steps to send feedback to Intel Corporation to understand how often each SDK sample is used.
-                PXCMMetadata md = session.QueryInstance<PXCMMetadata>();
-                if (md != null)
-                {
-                    string sample_name = "Hands Viewer CS";
-                    md.AttachBuffer(1297303632, System.Text.Encoding.Unicode.GetBytes(sample_name));
-                }
-                //   Form splash = new Form1();
-                //  splash.Show();
-                //  Thread.Sleep(3000);
-                //  splash.Close();
-               //   Application.Run(new MainForm(session));
-                Application.Run(new WelcomePage());
-                session.Dispose();
-            }
+            Application.Run(new WelcomePage());
+            
         }
     }
 }

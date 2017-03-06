@@ -28,8 +28,23 @@ namespace hands_viewer.cs
         private void ChallengeMode_Click(object sender, EventArgs e)
         {
 
-          // MainForm form = new MainForm();
-           //form.Show();
+            PXCMSession session = null;
+            session = PXCMSession.CreateInstance();
+            if (session != null)
+            {
+                // Optional steps to send feedback to Intel Corporation to understand how often each SDK sample is used.
+                PXCMMetadata md = session.QueryInstance<PXCMMetadata>();
+                if (md != null)
+                {
+                    string sample_name = "Hands Viewer CS";
+                    md.AttachBuffer(1297303632, System.Text.Encoding.Unicode.GetBytes(sample_name));
+                }
+               
+                MainForm form = new MainForm(session);
+                form.Show();
+               
+            }
+           
 
         }
     }
