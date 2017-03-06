@@ -21,7 +21,6 @@ namespace hands_viewer.cs
 
         private void Stop_Click(object sender, EventArgs e)
         {
-            // MainForm form = new MainForm(g_session);
             Application.Exit();
 
         }
@@ -29,10 +28,8 @@ namespace hands_viewer.cs
         private void ChallengeMode_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
+          // MainForm form = new MainForm();
+           //form.Show();
 
         }
     }

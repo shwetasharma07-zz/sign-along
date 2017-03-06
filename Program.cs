@@ -43,7 +43,7 @@ namespace hands_viewer.cs
                 //  splash.Show();
                 //  Thread.Sleep(3000);
                 //  splash.Close();
-                //  Application.Run(new MainForm(session));
+               //   Application.Run(new MainForm(session));
                 Application.Run(new WelcomePage());
                 session.Dispose();
             }
