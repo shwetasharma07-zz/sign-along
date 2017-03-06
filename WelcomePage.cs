@@ -25,5 +25,15 @@ namespace hands_viewer.cs
             Application.Exit();
 
         }
+
+        private void ChallengeMode_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
