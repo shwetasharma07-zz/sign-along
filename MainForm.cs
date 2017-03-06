@@ -23,7 +23,7 @@ namespace hands_viewer.cs
         protected int karaokeIndex = -1;
         protected bool ready = true;
 
-        private Hashtable pictures;
+     //   private Hashtable pictures;
         private Timer timer = new Timer();
         private string filename = null;
         public Dictionary<string,PXCMCapture.DeviceInfo> Devices { get; set; }
@@ -76,8 +76,6 @@ namespace hands_viewer.cs
 
             this.Start_Click(this, null);
         }
-
-        
 
         private delegate void UpdateGesturesToListDelegate(string gestureName, int index);
         public void UpdateGesturesToList(string gestureName, int index)
@@ -214,7 +212,8 @@ namespace hands_viewer.cs
         delegate void DoRecognitionCompleted();
         private void DoRecognition()
         {
-            HandsRecognition gr = new HandsRecognition(this);
+          HandsRecognition gr = new HandsRecognition(this);
+           // MainForm gr = new MainForm(session);
             gr.SimplePipeline();
             this.Invoke(new DoRecognitionCompleted(
                 delegate
@@ -393,6 +392,7 @@ namespace hands_viewer.cs
         private void Stop_Click(object sender, EventArgs e)
         {
             stop = true;
+
             Application.Exit();
         }
 

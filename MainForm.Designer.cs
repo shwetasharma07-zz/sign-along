@@ -64,7 +64,7 @@
             // Start
             // 
             this.Start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Start.Location = new System.Drawing.Point(128, 514);
+            this.Start.Location = new System.Drawing.Point(735, 514);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(189, 35);
             this.Start.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             this.Stop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Stop.Enabled = false;
-            this.Stop.Location = new System.Drawing.Point(742, 12);
+            this.Stop.Location = new System.Drawing.Point(1349, 12);
             this.Stop.Name = "Stop";
             this.Stop.Size = new System.Drawing.Size(46, 35);
             this.Stop.TabIndex = 3;
@@ -106,7 +106,7 @@
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Name = "MainMenu";
             this.MainMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.MainMenu.Size = new System.Drawing.Size(800, 40);
+            this.MainMenu.Size = new System.Drawing.Size(1407, 40);
             this.MainMenu.TabIndex = 0;
             this.MainMenu.Text = "MainMenu";
             // 
@@ -150,7 +150,7 @@
             this.Joints.AutoSize = true;
             this.Joints.Checked = true;
             this.Joints.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Joints.Location = new System.Drawing.Point(37, 491);
+            this.Joints.Location = new System.Drawing.Point(644, 491);
             this.Joints.Name = "Joints";
             this.Joints.Size = new System.Drawing.Size(101, 29);
             this.Joints.TabIndex = 19;
@@ -162,7 +162,7 @@
             this.Depth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Depth.AutoSize = true;
             this.Depth.Checked = true;
-            this.Depth.Location = new System.Drawing.Point(-19, 468);
+            this.Depth.Location = new System.Drawing.Point(588, 468);
             this.Depth.Name = "Depth";
             this.Depth.Size = new System.Drawing.Size(100, 29);
             this.Depth.TabIndex = 20;
@@ -174,7 +174,7 @@
             // 
             this.Labelmap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Labelmap.AutoSize = true;
-            this.Labelmap.Location = new System.Drawing.Point(-2, 466);
+            this.Labelmap.Location = new System.Drawing.Point(605, 466);
             this.Labelmap.Name = "Labelmap";
             this.Labelmap.Size = new System.Drawing.Size(184, 29);
             this.Labelmap.TabIndex = 21;
@@ -188,7 +188,7 @@
             this.Skeleton.AutoSize = true;
             this.Skeleton.Checked = true;
             this.Skeleton.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Skeleton.Location = new System.Drawing.Point(84, 491);
+            this.Skeleton.Location = new System.Drawing.Point(691, 491);
             this.Skeleton.Name = "Skeleton";
             this.Skeleton.Size = new System.Drawing.Size(128, 29);
             this.Skeleton.TabIndex = 23;
@@ -201,9 +201,9 @@
             this.Status2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StatusLabel});
             this.Status2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.Status2.Location = new System.Drawing.Point(0, 563);
+            this.Status2.Location = new System.Drawing.Point(0, 823);
             this.Status2.Name = "Status2";
-            this.Status2.Size = new System.Drawing.Size(800, 37);
+            this.Status2.Size = new System.Drawing.Size(1407, 37);
             this.Status2.SizingGrip = false;
             this.Status2.TabIndex = 25;
             this.Status2.Text = "Status2";
@@ -220,7 +220,7 @@
             this.Scale2.AutoSize = true;
             this.Scale2.Checked = true;
             this.Scale2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Scale2.Location = new System.Drawing.Point(164, 466);
+            this.Scale2.Location = new System.Drawing.Point(771, 466);
             this.Scale2.Name = "Scale2";
             this.Scale2.Size = new System.Drawing.Size(98, 29);
             this.Scale2.TabIndex = 26;
@@ -233,7 +233,7 @@
             this.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel2.ErrorImage = null;
             this.Panel2.InitialImage = null;
-            this.Panel2.Location = new System.Drawing.Point(0, 468);
+            this.Panel2.Location = new System.Drawing.Point(0, 728);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(209, 132);
             this.Panel2.TabIndex = 27;
@@ -245,7 +245,7 @@
             this.Mirror.AutoSize = true;
             this.Mirror.Checked = true;
             this.Mirror.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Mirror.Location = new System.Drawing.Point(-21, 491);
+            this.Mirror.Location = new System.Drawing.Point(586, 491);
             this.Mirror.Name = "Mirror";
             this.Mirror.Size = new System.Drawing.Size(100, 29);
             this.Mirror.TabIndex = 30;
@@ -257,7 +257,7 @@
             this.cmbGesturesList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbGesturesList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.cmbGesturesList.FormattingEnabled = true;
-            this.cmbGesturesList.Location = new System.Drawing.Point(26, 527);
+            this.cmbGesturesList.Location = new System.Drawing.Point(633, 527);
             this.cmbGesturesList.Name = "cmbGesturesList";
             this.cmbGesturesList.Size = new System.Drawing.Size(91, 17);
             this.cmbGesturesList.TabIndex = 35;
@@ -267,7 +267,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 511);
+            this.label2.Location = new System.Drawing.Point(631, 511);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 25);
             this.label2.TabIndex = 38;
@@ -284,7 +284,7 @@
             // infoTextBox
             // 
             this.infoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.infoTextBox.Location = new System.Drawing.Point(32, 324);
+            this.infoTextBox.Location = new System.Drawing.Point(639, 324);
             this.infoTextBox.Name = "infoTextBox";
             this.infoTextBox.Size = new System.Drawing.Size(209, 136);
             this.infoTextBox.TabIndex = 40;
@@ -316,7 +316,7 @@
             this.labelSolved.AutoSize = true;
             this.labelSolved.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSolved.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelSolved.Location = new System.Drawing.Point(215, 480);
+            this.labelSolved.Location = new System.Drawing.Point(215, 740);
             this.labelSolved.Name = "labelSolved";
             this.labelSolved.Size = new System.Drawing.Size(636, 219);
             this.labelSolved.TabIndex = 43;
@@ -330,7 +330,7 @@
             this.labelFull.BackColor = System.Drawing.SystemColors.Control;
             this.labelFull.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFull.ForeColor = System.Drawing.Color.Gray;
-            this.labelFull.Location = new System.Drawing.Point(215, 480);
+            this.labelFull.Location = new System.Drawing.Point(215, 740);
             this.labelFull.Name = "labelFull";
             this.labelFull.Size = new System.Drawing.Size(636, 219);
             this.labelFull.TabIndex = 44;
@@ -343,7 +343,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 600);
+            this.pictureBox1.Size = new System.Drawing.Size(1407, 860);
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -351,7 +351,7 @@
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ClientSize = new System.Drawing.Size(1407, 860);
             this.Controls.Add(this.Panel2);
             this.Controls.Add(this.Stop);
             this.Controls.Add(this.labelSolved);

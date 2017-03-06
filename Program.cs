@@ -39,11 +39,12 @@ namespace hands_viewer.cs
                     string sample_name = "Hands Viewer CS";
                     md.AttachBuffer(1297303632, System.Text.Encoding.Unicode.GetBytes(sample_name));
                 }
-             //   Form splash = new Form1();
-              //  splash.Show();
-              //  Thread.Sleep(3000);
-              //  splash.Close();
-                Application.Run(new MainForm(session));
+                //   Form splash = new Form1();
+                //  splash.Show();
+                //  Thread.Sleep(3000);
+                //  splash.Close();
+                //  Application.Run(new MainForm(session));
+                Application.Run(new WelcomePage());
                 session.Dispose();
             }
         }

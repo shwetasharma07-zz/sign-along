@@ -15,7 +15,7 @@ namespace hands_viewer.cs
         //Queue containing depth image - for synchronization purposes
         private Queue<PXCMImage> m_images;
         private const int NumberOfFramesToDelay = 3;
-        private int _framesCounter = 0;
+       // private int _framesCounter = 0;
         private float _maxRange;
        
 
@@ -27,6 +27,7 @@ namespace hands_viewer.cs
             LUT = Enumerable.Repeat((byte)0, 256).ToArray();
             LUT[255] = 1;
         }
+
 
         /* Checking if sensor device connect or not */
         private bool DisplayDeviceConnection(bool state)
