@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.Start = new System.Windows.Forms.Button();
             this.Stop = new System.Windows.Forms.Button();
             this.sourceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,10 +56,12 @@
             this.labelSolved = new System.Windows.Forms.Label();
             this.labelFull = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.MainMenu.SuspendLayout();
             this.Status2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Panel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Start
@@ -231,6 +234,7 @@
             // Panel2
             // 
             this.Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Panel2.BackColor = System.Drawing.Color.White;
             this.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel2.ErrorImage = null;
             this.Panel2.InitialImage = null;
@@ -315,12 +319,13 @@
             // 
             this.labelSolved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelSolved.AutoSize = true;
+            this.labelSolved.BackColor = System.Drawing.Color.White;
             this.labelSolved.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSolved.ForeColor = System.Drawing.Color.DarkOrange;
             this.labelSolved.Location = new System.Drawing.Point(215, 740);
             this.labelSolved.Name = "labelSolved";
             this.labelSolved.Size = new System.Drawing.Size(636, 219);
-            this.labelSolved.TabIndex = 43;
+            this.labelSolved.TabIndex = 42;
             this.labelSolved.Text = "label3";
             this.labelSolved.Click += new System.EventHandler(this.labelSolved_Click);
             // 
@@ -328,13 +333,13 @@
             // 
             this.labelFull.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelFull.AutoSize = true;
-            this.labelFull.BackColor = System.Drawing.SystemColors.Control;
+            this.labelFull.BackColor = System.Drawing.Color.White;
             this.labelFull.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFull.ForeColor = System.Drawing.Color.Gray;
-            this.labelFull.Location = new System.Drawing.Point(215, 740);
+            this.labelFull.Location = new System.Drawing.Point(213, 740);
             this.labelFull.Name = "labelFull";
             this.labelFull.Size = new System.Drawing.Size(636, 219);
-            this.labelFull.TabIndex = 44;
+            this.labelFull.TabIndex = 42;
             this.labelFull.Text = "label3";
             // 
             // pictureBox1
@@ -342,6 +347,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1407, 860);
@@ -349,10 +355,21 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(161, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1083, 817);
+            this.pictureBox2.TabIndex = 46;
+            this.pictureBox2.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1407, 860);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Panel2);
             this.Controls.Add(this.Stop);
             this.Controls.Add(this.labelSolved);
@@ -388,6 +405,7 @@
             this.Status2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Panel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,5 +440,6 @@
         private System.Windows.Forms.Label labelSolved;
         private System.Windows.Forms.Label labelFull;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

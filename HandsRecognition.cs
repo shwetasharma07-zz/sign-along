@@ -450,7 +450,7 @@ namespace hands_viewer.cs
 
                 handInfo += folded + "\r\n";
 
-                if (folded.Substring(1) == "||__")
+             /*   if (folded.Substring(1) == "||__")
                 {
                     handInfo += "Victory";
                 }
@@ -462,7 +462,7 @@ namespace hands_viewer.cs
                 if (folded == "|_|__")
                 {
                     handInfo += "Fuck";
-                }
+                }*/
 
                 
                 handsC += GetFoldedCount(nodes[h]);

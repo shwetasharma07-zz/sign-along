@@ -330,7 +330,7 @@ namespace hands_viewer.cs
 
         protected void NextKaraoke()
         {
-            string[] words = {"ACE", "MOM", "LEMON", "MILLION", "LEAF", "CANDLE", "ECONOMIC", "COFFEE", "FACE", "LOONIE",
+            string[] words = {"ECONOMIC", "MOM", "LEMON", "MILLION", "LEAF", "CANDLE", "ACE", "COFFEE", "FACE", "LOONIE",
                                 "CLIMB", "IDEA", "FEED", "AMBULANCE", "MAIL", "FOOD", "ONION", "DECLINE", "BAMBOO", "ACADEMIC"};
            /* Bitmap[] images = {
                                   FF_HandsViewer.cs.Properties.Resources.bond,
