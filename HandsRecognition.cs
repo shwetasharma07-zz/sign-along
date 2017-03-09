@@ -291,6 +291,7 @@ namespace hands_viewer.cs
             return count.ToString();
         }
 
+
         protected int GetTip(PXCMHandData.JointData[] nodes)
         {
             for (int i = 1; i < 5; i++)
@@ -353,10 +354,6 @@ namespace hands_viewer.cs
             {
                 return "F";
             }
-            if (folded == "41")
-            {
-                return "L";
-            }
             if (folded == "42")
             {
                 return "N";
@@ -377,10 +374,15 @@ namespace hands_viewer.cs
             for (int i = 0; i < 5; i++)
             {
                 float tipDistance = Distance(tipPoint, nodes[0][5 + i * 4].positionWorld);
+                float distanceFromMid = Distance(tipPoint, nodes[0][0].positionWorld);
                 if (tipDistance < minTipDistance)
                 {
                     minTipDistance = tipDistance;
                     tipIndex = i;
+                }
+                if (distanceFromMid < minTipDistance)
+                {
+                    tipIndex = 5;
                 }
             }
 
@@ -397,6 +399,8 @@ namespace hands_viewer.cs
                     return "O";
                 case 4:
                     return "U";
+                case 5:
+                    return "L";
                 default:
                     return "?";
             }
