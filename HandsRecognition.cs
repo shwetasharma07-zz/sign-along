@@ -356,10 +356,12 @@ namespace hands_viewer.cs
             }
             if (folded == "42")
             {
+                
                 return "N";
             }
             if (folded == "43")
             {
+                timer.Start();
                 return "M";
             }
             return "?";
@@ -484,6 +486,7 @@ namespace hands_viewer.cs
             form.UpdateLetter(letter);
             if (letter != "?")
             {
+                
                 form.UpdateKaraoke(letter);
             }
             form.UpdateGestureInfo(info);

@@ -310,11 +310,11 @@
             this.labelSolved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelSolved.AutoSize = true;
             this.labelSolved.BackColor = System.Drawing.Color.White;
-            this.labelSolved.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSolved.Font = new System.Drawing.Font("Californian FB", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSolved.ForeColor = System.Drawing.Color.DarkOrange;
             this.labelSolved.Location = new System.Drawing.Point(215, 740);
             this.labelSolved.Name = "labelSolved";
-            this.labelSolved.Size = new System.Drawing.Size(636, 219);
+            this.labelSolved.Size = new System.Drawing.Size(503, 220);
             this.labelSolved.TabIndex = 42;
             this.labelSolved.Text = "label3";
             this.labelSolved.Click += new System.EventHandler(this.labelSolved_Click);
@@ -324,11 +324,11 @@
             this.labelFull.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelFull.AutoSize = true;
             this.labelFull.BackColor = System.Drawing.Color.White;
-            this.labelFull.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFull.Font = new System.Drawing.Font("Californian FB", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFull.ForeColor = System.Drawing.Color.Gray;
-            this.labelFull.Location = new System.Drawing.Point(213, 740);
+            this.labelFull.Location = new System.Drawing.Point(215, 740);
             this.labelFull.Name = "labelFull";
-            this.labelFull.Size = new System.Drawing.Size(636, 219);
+            this.labelFull.Size = new System.Drawing.Size(577, 220);
             this.labelFull.TabIndex = 42;
             this.labelFull.Text = "label3";
             // 

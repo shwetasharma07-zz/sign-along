@@ -66,12 +66,6 @@ namespace hands_viewer.cs
             timer.Interval = 3000;
             timer.Start();
 
-            //labelSolved.Parent = pictureBox1;
-            //labelSolved.BackColor = Color.Transparent;
-
-            //labelFull.Parent = pictureBox1;
-            //labelFull.BackColor = Color.Transparent;
-
             NextKaraoke();
 
             this.Start_Click(this, null);
@@ -336,7 +330,7 @@ namespace hands_viewer.cs
 
         protected void NextKaraoke()
         {
-            string[] words = {"ECONOMIC", "AEIOU", "LEMON", "MILLION", "LEAF", "CANDLE", "ACE", "COFFEE", "FACE", "LOONIE",
+            string[] words = {"AA", "AEIOU", "LEMON", "MILLION", "LEAF", "CANDLE", "ACE", "COFFEE", "FACE", "LOONIE",
                                 "CLIMB", "IDEA", "FEED", "AMBULANCE", "MAIL", "FOOD", "ONION", "DECLINE", "BAMBOO", "ACADEMIC"};
            /* Bitmap[] images = {
                                   FF_HandsViewer.cs.Properties.Resources.bond,
