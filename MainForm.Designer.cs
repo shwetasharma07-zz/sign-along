@@ -52,11 +52,11 @@
             this.labelFPS = new System.Windows.Forms.Label();
             this.infoTextBox = new System.Windows.Forms.RichTextBox();
             this.gestureInfo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.labelSolved = new System.Windows.Forms.Label();
             this.labelFull = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.MainMenu.SuspendLayout();
             this.Status2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Panel2)).BeginInit();
@@ -305,16 +305,6 @@
             this.gestureInfo.TabIndex = 41;
             this.gestureInfo.TextChanged += new System.EventHandler(this.gestureInfo_TextChanged);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 300F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(248, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 906);
-            this.label1.TabIndex = 42;
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
             // labelSolved
             // 
             this.labelSolved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -364,6 +354,16 @@
             this.pictureBox2.Size = new System.Drawing.Size(1083, 817);
             this.pictureBox2.TabIndex = 46;
             this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 300F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(248, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 906);
+            this.label1.TabIndex = 42;
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // MainForm
             // 
@@ -436,10 +436,10 @@
         private System.Windows.Forms.ToolStripMenuItem Playback;
         private System.Windows.Forms.ToolStripMenuItem Record;
         private System.Windows.Forms.TextBox gestureInfo;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelSolved;
         private System.Windows.Forms.Label labelFull;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
     }
 }

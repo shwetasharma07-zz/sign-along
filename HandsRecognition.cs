@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
+using System.Timers;
 
 namespace hands_viewer.cs
 {
@@ -17,6 +18,7 @@ namespace hands_viewer.cs
         private const int NumberOfFramesToDelay = 3;
        // private int _framesCounter = 0;
         private float _maxRange;
+        Timer timer = new Timer(2000);
        
 
 
@@ -245,6 +247,7 @@ namespace hands_viewer.cs
             return (float) Math.Sqrt((double)(dx * dx + dy * dy + dz * dz));
         }
 
+        //checking if it's bent
         //protected bool IsSognut(PXCMHandData.JointData[] nodes, PXCMHandData.JointType center, PXCMHandData.JointType mid, PXCMHandData.JointType tip)
         protected bool IsSognut(PXCMHandData.JointData[] nodes, PXCMHandData.JointType center, int mid, int tip)
         {
@@ -384,6 +387,7 @@ namespace hands_viewer.cs
             switch (tipIndex)
             {
                 case 0: 
+
                     return "A";
                 case 1:
                     return "E";
@@ -449,20 +453,6 @@ namespace hands_viewer.cs
                 string folded = GetFolded(nodes[h]);
 
                 handInfo += folded + "\r\n";
-
-             /*   if (folded.Substring(1) == "||__")
-                {
-                    handInfo += "Victory";
-                }
-                if (folded == "||__|")
-                {
-                    form.UpdateKaraoke("*");
-                    return;
-                }
-                if (folded == "|_|__")
-                {
-                    handInfo += "Fuck";
-                }*/
 
                 
                 handsC += GetFoldedCount(nodes[h]);

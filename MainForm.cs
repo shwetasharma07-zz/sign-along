@@ -289,13 +289,16 @@ namespace hands_viewer.cs
         private delegate void UpdateGestureInfoDelegate(string info);
         public void UpdateGestureInfo(string info)
         {
+
             gestureInfo.Invoke(new UpdateGestureInfoDelegate(delegate(string i) { gestureInfo.Text = i; }), new object[] { info });
         }
 
         private delegate void UpdateLetterDelegate(string letter);
         public void UpdateLetter(string letter)
         {
+
             label1.Invoke(new UpdateLetterDelegate(delegate(string l) { label1.Text = l; }), new object[] { letter });
+
         }
 
 
@@ -304,6 +307,7 @@ namespace hands_viewer.cs
         {
             this.Invoke(new UpdateKaraokeDelegate(delegate(string l)
             {
+                
                 if (labelFull.Text.Length == 0)
                 {
                     return;
@@ -318,10 +322,12 @@ namespace hands_viewer.cs
                 if (next == l)
                 {
                     ready = false;
+
                     labelSolved.Text += next;
                     if (labelFull.Text.Length == labelSolved.Text.Length)
                     {
-                        labelSolved.Text = "Congrats!";
+                        timer.Start();
+                        labelSolved.Text = "Congratulations!";
                         labelFull.Text = "";
                     }
                 }
@@ -330,7 +336,7 @@ namespace hands_viewer.cs
 
         protected void NextKaraoke()
         {
-            string[] words = {"ECONOMIC", "MOM", "LEMON", "MILLION", "LEAF", "CANDLE", "ACE", "COFFEE", "FACE", "LOONIE",
+            string[] words = {"ECONOMIC", "AEIOU", "LEMON", "MILLION", "LEAF", "CANDLE", "ACE", "COFFEE", "FACE", "LOONIE",
                                 "CLIMB", "IDEA", "FEED", "AMBULANCE", "MAIL", "FOOD", "ONION", "DECLINE", "BAMBOO", "ACADEMIC"};
            /* Bitmap[] images = {
                                   FF_HandsViewer.cs.Properties.Resources.bond,
@@ -369,6 +375,8 @@ namespace hands_viewer.cs
                 {
                     infoTextBox.Text = String.Empty;
                 }
+
+           
 
                 infoTextBox.SelectionColor = c;
 
@@ -579,34 +587,6 @@ namespace hands_viewer.cs
             }
         }
 
-        //private delegate void DisplayGesturesDelegate(PXCMHandData.GestureData gestureData, uint handID);
-        //public void DisplayGestures(PXCMHandData.GestureData gestureData, uint handID)
-        //{
-        //    if (!Gesture.Checked) return;
-
-        //    if (handID == 1)
-        //    {
-        //        Gesture1.Invoke(new DisplayGesturesDelegate(delegate(PXCMHandData.GestureData data, uint id)
-        //        {
-        //                Gesture1.Image = (Bitmap) pictures[data.name];
-        //                Gesture1.Invalidate();
-        //                timer.Start();
-                    
-        //        }), new object[] {gestureData, handID});
-        //    }
-
-        //    if (handID == 2)
-        //    {
-        //        Gesture2.Invoke(new DisplayGesturesDelegate(delegate(PXCMHandData.GestureData data, uint id)
-        //        {         
-        //                Gesture2.Image = (Bitmap) pictures[data.name];
-        //                Gesture2.Invalidate();
-        //                timer.Start();
-                    
-        //        }), new object[] {gestureData, handID});
-        //    }
-        //}
-
         private delegate void UpdatePanelDelegate();
         public void UpdatePanel()
         {
@@ -629,11 +609,10 @@ namespace hands_viewer.cs
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            //UpdateLeftGesturesStatus("");
-            //UpdateRightGesturesStatus("");
             ready = true;
             if (labelFull.Text == "")
             {
+              //  timer.Start();
                 NextKaraoke();
             }
         }
