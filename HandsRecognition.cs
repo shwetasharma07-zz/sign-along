@@ -355,22 +355,14 @@ namespace hands_viewer.cs
             {
                 return "F";
             }
-            if (folded == "42" ) //and distance between tips is < 100
-            {
-                
-                return "N";
-            }
-            if (folded == "43") //and distance between tips is < 100
-            {
-                return "M";
-            }
+            
             return "?";
         }
 
-        public string findVovel(PXCMHandData.JointData[][] nodes, int tip)
+        public string findVovel(PXCMHandData.JointData[][] nodes, int tip, string folded)
         {
             PXCMPoint3DF32 tipPoint = nodes[1][5 + 4 * tip].positionWorld;
-          
+            
             PXCMPoint3DF32 centerOfHand = nodes[0][(int)PXCMHandData.JointType.JOINT_CENTER].positionWorld;
 
             float minTipDistance = 1000;
@@ -387,7 +379,18 @@ namespace hands_viewer.cs
                 }
                 if (distanceFromMid < minTipDistance)
                 {
+                    minTipDistance = distanceFromMid;
                     tipIndex = 5;
+                }
+                if (distanceFromMid < minTipDistance && folded == "42")
+                {
+                    minTipDistance = distanceFromMid;
+                    tipIndex = 6;
+                }
+                if (distanceFromMid < minTipDistance && folded == "43")
+                {
+                    minTipDistance = distanceFromMid;
+                    tipIndex = 7;
                 }
             }
 
@@ -406,6 +409,10 @@ namespace hands_viewer.cs
                     return "U";
                 case 5:
                     return "L";
+                case 6:
+                    return "N";
+                case 7:
+                    return "M";
                 default:
                     return "?";
             }
@@ -474,11 +481,12 @@ namespace hands_viewer.cs
             }
 
             string letter = "?";
-            if (handsC == "41")
+            if (handsC == "41" | handsC == "42" | handsC == "43")
             {
-                letter = findVovel(nodes, GetTip(nodes[1]));
+                letter = findVovel(nodes, GetTip(nodes[1]), handsC);
             }
             
+
             if (letter == "?")
             {
               /*  int leftHandIndexTip = GetTip(nodes[0]);
