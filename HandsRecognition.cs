@@ -18,7 +18,7 @@ namespace hands_viewer.cs
         private const int NumberOfFramesToDelay = 3;
        // private int _framesCounter = 0;
         private float _maxRange;
-        Timer timer = new Timer(2000);
+        Timer timer = new Timer(2500);
        
 
 
@@ -336,11 +336,16 @@ namespace hands_viewer.cs
             return info;
         }
 
-        protected string GetLetter(string rounded, string folded)
+        protected string GetLetter(string rounded, string folded, PXCMHandData.JointData[][] nodes)
         {
+            PXCMHandData.JointData[] hand0 = nodes[0];
+            PXCMHandData.JointData[] hand1 = nodes[1];
+            
+
+
             if (rounded == "oo")
             {
-                return "B";
+                return "B"; //and distance between tips
             }
             if (rounded == "o")
             {
@@ -348,20 +353,19 @@ namespace hands_viewer.cs
             }
             if (rounded == "-o")
             {
-                return "D";
+                return "D"; //and distance between tips 
             }
-            if (folded == "22")
+            if (folded == "22") //and distance between tips is < 100
             {
                 return "F";
             }
-            if (folded == "42")
+            if (folded == "42" ) //and distance between tips is < 100
             {
                 
                 return "N";
             }
-            if (folded == "43")
+            if (folded == "43") //and distance between tips is < 100
             {
-                timer.Start();
                 return "M";
             }
             return "?";
@@ -370,13 +374,16 @@ namespace hands_viewer.cs
         public string findVovel(PXCMHandData.JointData[][] nodes, int tip)
         {
             PXCMPoint3DF32 tipPoint = nodes[1][5 + 4 * tip].positionWorld;
+          
+            PXCMPoint3DF32 centerOfHand = nodes[0][(int)PXCMHandData.JointType.JOINT_CENTER].positionWorld;
 
             float minTipDistance = 1000;
             int tipIndex = -1;
             for (int i = 0; i < 5; i++)
             {
                 float tipDistance = Distance(tipPoint, nodes[0][5 + i * 4].positionWorld);
-                float distanceFromMid = Distance(tipPoint, nodes[0][0].positionWorld);
+                float distanceFromMid = Distance(tipPoint, centerOfHand);
+               
                 if (tipDistance < minTipDistance)
                 {
                     minTipDistance = tipDistance;
@@ -479,7 +486,8 @@ namespace hands_viewer.cs
             
             if (letter == "?")
             {
-                letter = GetLetter(handsR, handsC);
+                
+                letter = GetLetter(handsR, handsC, nodes);
             }
            
             info = reversed.ToString() + "\tLetter - " + letter + "\r\n" + "Hands - " + handsR + handsC + "\r\n" + info;
