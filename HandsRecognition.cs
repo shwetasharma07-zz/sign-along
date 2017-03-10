@@ -336,12 +336,8 @@ namespace hands_viewer.cs
             return info;
         }
 
-        protected string GetLetter(string rounded, string folded, PXCMHandData.JointData[][] nodes)
+        protected string GetLetter(string rounded, string folded)
         {
-            PXCMHandData.JointData[] hand0 = nodes[0];
-            PXCMHandData.JointData[] hand1 = nodes[1];
-            
-
 
             if (rounded == "oo")
             {
@@ -353,7 +349,7 @@ namespace hands_viewer.cs
             }
             if (rounded == "-o")
             {
-                return "D"; //and distance between tips 
+                return "D"; 
             }
             if (folded == "22") //and distance between tips is < 100
             {
@@ -466,7 +462,6 @@ namespace hands_viewer.cs
                 string folded = GetFolded(nodes[h]);
 
                 handInfo += folded + "\r\n";
-
                 
                 handsC += GetFoldedCount(nodes[h]);
                 handsR += GetRoundFingers(nodes[h]);
@@ -486,8 +481,21 @@ namespace hands_viewer.cs
             
             if (letter == "?")
             {
-                
-                letter = GetLetter(handsR, handsC, nodes);
+              /*  int leftHandIndexTip = GetTip(nodes[0]);
+                int rightHandIndexTip = GetTip(nodes[1]);
+
+                PXCMPoint3DF32 leftIndex = nodes[0][5 + 4 * leftHandIndexTip].positionWorld;
+                PXCMPoint3DF32 rightIndex = nodes[1][5 + 4 * rightHandIndexTip].positionWorld;
+
+                float FDistance = Distance(leftIndex, rightIndex);
+                bool isF = false;
+
+                if (FDistance < 1000)
+                {
+                    isF = true;
+                }*/
+
+                letter = GetLetter(handsR, handsC);
             }
            
             info = reversed.ToString() + "\tLetter - " + letter + "\r\n" + "Hands - " + handsR + handsC + "\r\n" + info;
