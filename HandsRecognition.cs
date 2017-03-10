@@ -377,19 +377,19 @@ namespace hands_viewer.cs
                     minTipDistance = tipDistance;
                     tipIndex = i;
                 }
-                if (distanceFromMid < minTipDistance)
+                if (distanceFromMid < minTipDistance && folded == "41")
                 {
-                    minTipDistance = distanceFromMid;
+                  //  minTipDistance = distanceFromMid;
                     tipIndex = 5;
                 }
                 if (distanceFromMid < minTipDistance && folded == "42")
                 {
-                    minTipDistance = distanceFromMid;
+                   // minTipDistance = distanceFromMid;
                     tipIndex = 6;
                 }
                 if (distanceFromMid < minTipDistance && folded == "43")
                 {
-                    minTipDistance = distanceFromMid;
+                   // minTipDistance = distanceFromMid;
                     tipIndex = 7;
                 }
             }
@@ -481,11 +481,19 @@ namespace hands_viewer.cs
             }
 
             string letter = "?";
-            if (handsC == "41" | handsC == "42" | handsC == "43")
+            if (handsC == "41")
             {
                 letter = findVovel(nodes, GetTip(nodes[1]), handsC);
             }
-            
+            if (handsC == "42")
+            {
+                letter = findVovel(nodes, GetTip(nodes[1]), handsC);
+            }
+            if (handsC == "43")
+            {
+                letter = findVovel(nodes, GetTip(nodes[1]), handsC);
+            }
+
 
             if (letter == "?")
             {
