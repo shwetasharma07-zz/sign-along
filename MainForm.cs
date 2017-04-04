@@ -330,17 +330,8 @@ namespace hands_viewer.cs
 
         protected void NextKaraoke()
         {
-            string[] words = {"N", "NN", "LNF", "LEMON", "MILLION", "LEAF", "CANDLE", "ACE", "COFFEE", "FACE", "LOONIE",
-                                "CLIMB", "IDEA", "FEED", "AMBULANCE", "MAIL", "FOOD", "ONION", "DECLINE", "BAMBOO", "ACADEMIC"};
-           /* Bitmap[] images = {
-                                  FF_HandsViewer.cs.Properties.Resources.bond,
-                                  FF_HandsViewer.cs.Properties.Resources.man,
-                                  FF_HandsViewer.cs.Properties.Resources.becon,
-                                  FF_HandsViewer.cs.Properties.Resources.ily,
-                                  FF_HandsViewer.cs.Properties.Resources.fobia,
-                                  FF_HandsViewer.cs.Properties.Resources.cian,
-                                  FF_HandsViewer.cs.Properties.Resources.dumb,
-                                  FF_HandsViewer.cs.Properties.Resources.code};*/
+            string[] words = {"CLIMB", "LEMON", "ECONOMIC", "BOUNCE", "MILLION", "LEAF", "CANDLE", "ACE", "COFFEE", "FACE", "LOONIE",
+                                "IDEA", "FEED", "AMBULANCE", "MAIL", "FOOD", "ONION", "DECLINE", "BAMBOO", "ACADEMIC"};
 
             karaokeIndex += 1;
             if (karaokeIndex >= words.Length)
@@ -350,7 +341,6 @@ namespace hands_viewer.cs
 
             labelSolved.Text = "";
             labelFull.Text = words[karaokeIndex];
-          //  pictureBox1.Image = new Bitmap(images[karaokeIndex]);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
